@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adamini-a.github.io/sitemap.xml

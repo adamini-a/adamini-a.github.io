@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="it-IT">
+<html lang="it-IT" class="no-js">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)">
 	<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<title>Alessio Adamini &#8211; Senior Software Developer · Torino</title>
-<meta name='robots' content='max-image-preview:large' />
 <link rel="preload" href="assets/fonts/space-grotesk-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 	<script>
-	(function(){try{var t=localStorage.getItem('adamini-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.dataset.theme=t;}catch(e){}})();
+	(function(){document.documentElement.classList.remove('no-js');try{var t=localStorage.getItem('adamini-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.dataset.theme=t;}catch(e){}})();
 	</script>
 	<meta name="description" content="Progetto e costruisco applicazioni su misura: back-end PHP solidi, front-end React e Flutter, automazioni Python e i server Linux che li tengono in piedi.">
 <meta name="author" content="Alessio Adamini">
@@ -35,7 +33,7 @@
 <link rel="canonical" href="https://adamini-a.github.io/" />
 </head>
 
-<body class="home no-js">
+<body>
 
 <a class="skip-link" href="#main">Vai al contenuto</a>
 
@@ -49,6 +47,7 @@
 		<nav class="nav" aria-label="Navigazione principale">
 												<a href="#profilo">Profilo</a>
 									<a href="#competenze">Competenze</a>
+									<a href="#repository">Repository</a>
 									<a href="#esperienze">Esperienze</a>
 									<a href="#contatti">Contatti</a>
 									</nav>
@@ -269,6 +268,331 @@
 													</ul>
 									</article>
 					</div>
+	</div>
+</section>
+<section class="section" id="repository">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">Lavorazioni</p>
+				<h2 class="section__title">Repository private</h2>
+			</div>
+			<p class="section__lede">Dieci anni di codice che non posso mostrarvi. Posso però dirvi che c&#039;ero, e cosa ci ho fatto dentro.</p>
+		</div>
+	</div>
+
+	<div class="work">
+		<div class="work__viewport">
+			<div class="work__track">
+				<ul class="work__group" role="list">
+					<li>
+						<a class="work-tile" id="work-tile-ms" href="#work-card-ms" data-work="ms">
+							<span class="work-tile__sigla">M.S.</span>
+							<span class="work-tile__period">2016 — 2021</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-ut" href="#work-card-ut" data-work="ut">
+							<span class="work-tile__sigla">U.T.</span>
+							<span class="work-tile__period">2022 — 2024</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-ep" href="#work-card-ep" data-work="ep">
+							<span class="work-tile__sigla">E.P.</span>
+							<span class="work-tile__period">2024 — 2025</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-zp" href="#work-card-zp" data-work="zp">
+							<span class="work-tile__sigla">Z.P.</span>
+							<span class="work-tile__period">2024 — 2025</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-ty" href="#work-card-ty" data-work="ty">
+							<span class="work-tile__sigla">T.Y.</span>
+							<span class="work-tile__period">2025</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-ng" href="#work-card-ng" data-work="ng">
+							<span class="work-tile__sigla">N.G.</span>
+							<span class="work-tile__period">2025</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-wp4" href="#work-card-wp4" data-work="wp4">
+							<span class="work-tile__sigla">4×WP</span>
+							<span class="work-tile__period">2025</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-fc" href="#work-card-fc" data-work="fc">
+							<span class="work-tile__sigla">F.C.</span>
+							<span class="work-tile__period">2025 — oggi</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-rr" href="#work-card-rr" data-work="rr">
+							<span class="work-tile__sigla">R.R.</span>
+							<span class="work-tile__period">2025 — oggi</span>
+						</a>
+					</li>
+					<li>
+						<a class="work-tile" id="work-tile-qd" href="#work-card-qd" data-work="qd">
+							<span class="work-tile__sigla">Q.D.</span>
+							<span class="work-tile__period">2025 — oggi</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="work__cards wrap reveal">
+			<article class="work-card work-card--intro" data-open>
+				<p class="work-card__intro">Passa sopra una sigla — o toccala — e il nastro si ferma.</p>
+				<p class="work-card__hint">I nomi restano fuori: il lavoro era dei clienti e il codice sta in repository che non sono mie. Quello che posso raccontare è la parte che ho scritto io.</p>
+				<ul class="work-card__numbers">
+					<li><span class="work-card__metric-value">10</span> anni in produzione</li>
+					<li><span class="work-card__metric-value">10</span> progetti qui dentro</li>
+					<li><span class="work-card__metric-value">0</span> nomi fatti</li>
+				</ul>
+			</article>
+
+			<article class="work-card" id="work-card-ms" role="region" aria-labelledby="work-tile-ms">
+				<div class="work-card__head">
+					<p class="work-card__sigla">M.S.</p>
+					<p class="work-card__period">2016 — 2021</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Software house di un gestionale per la manutenzione industriale, usato da una torrefazione globale e da una catena di fast fashion.</p>
+					<ul class="work-card__list">
+						<li>Back-end OO-PHP dalla 5.0 alla 8.1, su applicazioni personalizzate cliente per cliente.</li>
+						<li>TDD e CI/CD portati dentro una base di codice legacy, in pair programming con il team.</li>
+						<li>Interfaccia diretta con i key account dei clienti finali e con gli sviluppatori remoti.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">OO-PHP 5 → 8.1</li>
+						<li class="tag">MySQL</li>
+						<li class="tag">TDD</li>
+						<li class="tag">CI/CD</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-ut" role="region" aria-labelledby="work-tile-ut">
+				<div class="work-card__head">
+					<p class="work-card__sigla">U.T.</p>
+					<p class="work-card__period">2022 — 2024</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Uno dei più grandi atenei pubblici italiani, con un parco applicativo stratificato in vent&#039;anni e nessuna possibilità di fermare il servizio.</p>
+					<ul class="work-card__list">
+						<li>Applicativi web critici per la gestione di assegnazioni e logistica, in Symfony e React.</li>
+						<li>Manutenzione in parallelo del legacy in PHP 5 e jQuery, senza interruzioni.</li>
+						<li>Pipeline di automazione in Python e Pandas, con rilascio su Linux.</li>
+						<li>Mentoring del team interno sull&#039;adozione dei nuovi framework.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">Symfony</li>
+						<li class="tag">React</li>
+						<li class="tag">PHP 5</li>
+						<li class="tag">jQuery</li>
+						<li class="tag">Python</li>
+						<li class="tag">Pandas</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-ep" role="region" aria-labelledby="work-tile-ep">
+				<div class="work-card__head">
+					<p class="work-card__sigla">E.P.</p>
+					<p class="work-card__period">2024 — 2025</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Gruppo europeo delle grandi cucine e lavanderie professionali: le attrezzature che stanno dietro a hotel, ospedali e catene di ristorazione.</p>
+					<ul class="work-card__list">
+						<li>Evoluzione del tema corporate multi-country, con menù differenziati per paese.</li>
+						<li>Pagine di linea prodotto costruite per reggere un catalogo che cambia di continuo.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">WordPress</li>
+						<li class="tag">PHP 8</li>
+						<li class="tag">ACF</li>
+						<li class="tag">Composer</li>
+					</ul>
+					<p class="work-card__metric"><span class="work-card__metric-value">100+</span> paesi serviti</p>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-zp" role="region" aria-labelledby="work-tile-zp">
+				<div class="work-card__head">
+					<p class="work-card__sigla">Z.P.</p>
+					<p class="work-card__period">2024 — 2025</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Marchio storico della ristorazione professionale, stesso gruppo industriale del precedente, con una rete di distributori multilingua.</p>
+					<ul class="work-card__list">
+						<li>Sito corporate multilingua e set di landing di prodotto.</li>
+						<li>Allineamento delle traduzioni e recupero delle etichette mancanti fra le lingue.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">WordPress</li>
+						<li class="tag">SCSS</li>
+						<li class="tag">ACF</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-ty" role="region" aria-labelledby="work-tile-ty">
+				<div class="work-card__head">
+					<p class="work-card__sigla">T.Y.</p>
+					<p class="work-card__period">2025</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Cantiere navale che costruisce superyacht su misura in acciaio e alluminio: pochi scafi l&#039;anno, ognuno un progetto a sé.</p>
+					<ul class="work-card__list">
+						<li>Sistema di helpdesk a ticket costruito da zero, con ruoli e permessi per reparto.</li>
+						<li>Analisi dello storico degli accessi per capire chi usava davvero cosa.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">Laravel 12</li>
+						<li class="tag">Backpack</li>
+						<li class="tag">SQLite</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-ng" role="region" aria-labelledby="work-tile-ng">
+				<div class="work-card__head">
+					<p class="work-card__sigla">N.G.</p>
+					<p class="work-card__period">2025</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Rete di centri specializzati con area riservata agli affiliati: ogni centro vede i propri dati e nient&#039;altro.</p>
+					<ul class="work-card__list">
+						<li>Piattaforma Nuxt e Strapi con scoping dei permessi per centro.</li>
+						<li>Protezione anti-spam sui form pubblici senza appoggiarsi a servizi di terze parti.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">Nuxt</li>
+						<li class="tag">Strapi</li>
+						<li class="tag">PM2</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-wp4" role="region" aria-labelledby="work-tile-wp4">
+				<div class="work-card__head">
+					<p class="work-card__sigla">4×WP</p>
+					<p class="work-card__period">2025</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Quattro siti sullo stesso hosting, compromessi dallo stesso vettore nel giro di pochi giorni.</p>
+					<ul class="work-card__list">
+						<li>Bonifica sito per sito: quarantena dei file infetti, rimozione delle utenze amministrative fittizie.</li>
+						<li>Chiusura delle vulnerabilità che avevano aperto la porta e piano di hardening per il dopo.</li>
+						<li>Documentazione dell&#039;incidente, perché la prossima volta si parta da lì.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">WordPress</li>
+						<li class="tag">Linux</li>
+						<li class="tag">Incident response</li>
+						<li class="tag">Hardening</li>
+					</ul>
+					<p class="work-card__metric"><span class="work-card__metric-value">4</span> siti rimessi in sicurezza</p>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-fc" role="region" aria-labelledby="work-tile-fc">
+				<div class="work-card__head">
+					<p class="work-card__sigla">F.C.</p>
+					<p class="work-card__period">2025 — oggi</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Produttore di impianti di aspirazione e trattamento dell&#039;aria per officine e industria, con una rete di rivenditori in decine di paesi.</p>
+					<ul class="work-card__list">
+						<li>Portale B2B con configuratore a fasi: l&#039;ordine si costruisce un pezzo alla volta.</li>
+						<li>Migrazione in corso da React e Laravel a un monorepo Nuxt e Strapi.</li>
+						<li>Reverse proxy e gestione dei processi sul server di produzione.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">React</li>
+						<li class="tag">Laravel</li>
+						<li class="tag">Nuxt</li>
+						<li class="tag">Strapi</li>
+						<li class="tag">PM2</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-rr" role="region" aria-labelledby="work-tile-rr">
+				<div class="work-card__head">
+					<p class="work-card__sigla">R.R.</p>
+					<p class="work-card__period">2025 — oggi</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">Laboratorio di ricamo e stampa personalizzata che vende online in tutta Italia: ogni ordine è un pezzo unico da mandare in produzione.</p>
+					<ul class="work-card__list">
+						<li>Rifacimento completo a partire dal legacy, con rendering lato server e un back-end dedicato al front.</li>
+						<li>Integrazione del corriere, corrispettivi e fatture, spooler per le email transazionali.</li>
+						<li>Watchdog che rimette in piedi i processi quando cadono, e credenziali mascherate nei log.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">Nuxt 4</li>
+						<li class="tag">Strapi 5</li>
+						<li class="tag">MySQL</li>
+						<li class="tag">PM2</li>
+					</ul>
+					<p class="work-card__metric"><span class="work-card__metric-value">571</span> commit</p>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-qd" role="region" aria-labelledby="work-tile-qd">
+				<div class="work-card__head">
+					<p class="work-card__sigla">Q.D.</p>
+					<p class="work-card__period">2025 — oggi</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">E-commerce di condotte e tubazioni tagliate su misura: il prezzo dipende da come configuri il pezzo, non da un listino.</p>
+					<ul class="work-card__list">
+						<li>Motore di pricing dinamico e checkout su misura sopra WooCommerce.</li>
+						<li>Regole di spedizione per merce ingombrante.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">WooCommerce</li>
+						<li class="tag">PHP</li>
+						<li class="tag">SCSS</li>
+						<li class="tag">Composer</li>
+					</ul>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<div class="wrap">
+		<p class="work__note">Le sigle restano sigle. I progetti appartengono a chi li ha commissionati: qui c&#039;è soltanto la parte che ho scritto io.</p>
 	</div>
 </section>
 <section class="section" id="esperienze">

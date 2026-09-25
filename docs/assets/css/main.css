@@ -742,6 +742,330 @@ button {
 	white-space: nowrap;
 }
 
+/* Repository private */
+.work {
+	--work-gap: clamp(0.75rem, 2vw, 1.25rem);
+	--work-overlap: clamp(0rem, 2.5vw, 2.25rem);
+	--work-fade: clamp(1.5rem, 6vw, 4rem);
+
+	position: relative;
+	isolation: isolate;
+	margin-block-start: clamp(1.25rem, 3vw, 2rem);
+}
+
+/*
+ * Stato di partenza — anche senza JS e con reduced-motion: striscia
+ * scorrevole nativa. Il JS ci scrive sopra data-mode="marquee".
+ */
+.work__viewport {
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+	scroll-snap-type: inline proximity;
+	scrollbar-width: thin;
+	padding-block: 0.5rem;
+	-webkit-mask-image: linear-gradient(90deg, transparent, #000 var(--work-fade), #000 calc(100% - var(--work-fade)), transparent);
+	mask-image: linear-gradient(90deg, transparent, #000 var(--work-fade), #000 calc(100% - var(--work-fade)), transparent);
+}
+
+.work[data-mode="marquee"] .work__viewport {
+	overflow-x: hidden;
+}
+
+.work__track {
+	display: flex;
+	inline-size: max-content;
+	padding-inline: var(--gutter);
+}
+
+.work[data-mode="marquee"] .work__track {
+	padding-inline: 0;
+	animation: work-scroll var(--work-dur, 40s) linear infinite;
+	will-change: transform;
+}
+
+/*
+ * Il gap di coda sta DENTRO il gruppo: così la larghezza del gruppo è
+ * esattamente il periodo dell'animazione e la giunzione non si vede.
+ */
+.work__group {
+	display: flex;
+	gap: var(--work-gap);
+	padding-inline-end: var(--work-gap);
+	margin: 0;
+	padding-block: 0;
+	list-style: none;
+}
+
+@keyframes work-scroll {
+	from { transform: translate3d(0, 0, 0); }
+	to   { transform: translate3d(calc(var(--work-shift, 0px) * -1), 0, 0); }
+}
+
+/* Il nastro si ferma appena il puntatore entra nella sezione, non sulla
+   singola tessera: attraversare un gap non deve farlo ripartire. */
+.work[data-mode="marquee"]:hover .work__track,
+.work[data-mode="marquee"]:focus-within .work__track,
+.work[data-mode="marquee"][data-open] .work__track {
+	animation-play-state: paused;
+}
+
+/* Tessere */
+.work-tile {
+	display: grid;
+	gap: 0.3rem;
+	place-content: center;
+	flex: none;
+	inline-size: clamp(8.5rem, 22vw, 11rem);
+	min-block-size: 7rem;
+	padding: 1.1rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--text);
+	background: var(--surface);
+	border: 1px solid var(--line-soft);
+	border-radius: var(--radius-lg);
+	scroll-snap-align: center;
+	transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), opacity 0.3s var(--ease);
+}
+
+.work-tile__sigla {
+	font-family: var(--font-display);
+	font-weight: 700;
+	font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2.2rem);
+	line-height: 1.05;
+	letter-spacing: -0.04em;
+}
+
+.work-tile__period {
+	font-size: 0.78rem;
+	color: var(--text-mute);
+	white-space: nowrap;
+}
+
+.work-tile:hover,
+.work-tile[data-active] {
+	border-color: var(--accent);
+	transform: translateY(-3px);
+}
+
+.work[data-open] .work-tile:not([data-active]) {
+	opacity: 0.45;
+}
+
+:root[data-theme="light"] .work[data-open] .work-tile:not([data-active]) {
+	opacity: 0.55;
+}
+
+/*
+ * Le schede: tutte nella stessa cella di griglia. Quelle chiuse restano
+ * visibility:hidden e non display:none, così continuano a dimensionare la
+ * riga: l'altezza è sempre quella della scheda più alta e aprire o chiudere
+ * non sposta un pixel del resto della pagina.
+ */
+.work__cards {
+	position: relative;
+	z-index: 2;
+	margin-block-start: 1rem;
+}
+
+.work__cards[data-single] {
+	display: grid;
+	grid-template-areas: "card";
+	margin-block-start: calc(var(--work-overlap) * -1);
+	pointer-events: none;
+}
+
+.work-card {
+	position: relative;
+	padding: clamp(1.3rem, 3vw, 1.9rem);
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: var(--radius-lg);
+	box-shadow: var(--shadow);
+}
+
+.work__cards[data-single] > .work-card {
+	grid-area: card;
+	visibility: hidden;
+	opacity: 0;
+	transform: translateY(6px);
+	transition: opacity 0.28s var(--ease), transform 0.28s var(--ease), visibility 0s 0.28s;
+}
+
+.work__cards[data-single] > .work-card[data-open] {
+	visibility: visible;
+	opacity: 1;
+	transform: none;
+	pointer-events: auto;
+	transition: opacity 0.28s var(--ease), transform 0.28s var(--ease), visibility 0s;
+}
+
+/* Senza JS le schede stanno semplicemente una sotto l'altra. */
+.work__cards:not([data-single]) > .work-card + .work-card {
+	margin-block-start: 1rem;
+}
+
+/* Unico elemento posizionato: sta dentro la scheda, quindi non può sbordare. */
+.work__cards[data-single] > .work-card[data-open]:not(.work-card--intro)::before {
+	content: "";
+	position: absolute;
+	inset-block-start: -7px;
+	inset-inline-start: var(--work-caret, 50%);
+	inline-size: 12px;
+	block-size: 12px;
+	translate: -50% 0;
+	rotate: 45deg;
+	background: var(--surface);
+	border-block-start: 1px solid var(--line);
+	border-inline-start: 1px solid var(--line);
+}
+
+.work-card__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.5rem 1rem;
+	margin-bottom: 0.7rem;
+}
+
+.work-card__sigla {
+	font-family: var(--font-display);
+	font-weight: 700;
+	font-size: var(--step-2);
+	letter-spacing: -0.03em;
+	color: var(--accent);
+}
+
+.work-card__period {
+	font-size: 0.85rem;
+	color: var(--text-mute);
+}
+
+.work-card__intro {
+	font-family: var(--font-display);
+	font-size: var(--step-1);
+	margin-bottom: 0.6rem;
+}
+
+.work-card__hint {
+	color: var(--text-soft);
+	text-wrap: pretty;
+}
+
+.work-card__list {
+	display: grid;
+	gap: 0.65rem;
+	margin-block: 1rem 0;
+	list-style: none;
+	font-size: var(--step--1);
+	line-height: 1.6;
+	color: var(--text-soft);
+}
+
+.work-card__list li {
+	position: relative;
+	padding-left: 1.4rem;
+}
+
+.work-card__list li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.62em;
+	width: 0.45rem;
+	height: 1px;
+	background: var(--accent);
+}
+
+.work-card__side {
+	margin-block-start: 1.2rem;
+}
+
+.work-card__metric {
+	margin-block-start: 1rem;
+	padding-block-start: 0.9rem;
+	border-block-start: 1px solid var(--line-soft);
+	font-size: 0.9rem;
+	color: var(--text-mute);
+}
+
+.work-card--intro {
+	display: flex;
+	flex-direction: column;
+}
+
+.work-card--intro .work-card__numbers {
+	margin-block-start: auto;
+}
+
+.work-card__numbers {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem 2rem;
+	margin-block-start: 1.4rem;
+	padding-block-start: 1.1rem;
+	border-block-start: 1px solid var(--line-soft);
+	list-style: none;
+	font-size: 0.9rem;
+	color: var(--text-mute);
+}
+
+.work-card__metric-value {
+	font-family: var(--font-display);
+	font-size: var(--step-1);
+	font-weight: 700;
+	color: var(--text);
+	margin-inline-end: 0.35rem;
+}
+
+@media (min-width: 60rem) {
+	.work-card:not(.work-card--intro) {
+		display: grid;
+		grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr);
+		gap: 0 clamp(1.5rem, 3vw, 2.5rem);
+		align-content: start;
+	}
+
+	.work-card__head {
+		grid-column: 1 / -1;
+	}
+
+	.work-card__side {
+		margin-block-start: 0;
+	}
+}
+
+/*
+ * Sul largo le schede restano impilate nella stessa cella: il puntatore non
+ * deve mai inseguire un bersaglio che si sposta. Sullo stretto si apre solo
+ * quella scelta, perché lì è un tap e un accordion si comporta così.
+ */
+@media (max-width: 59.999rem) {
+	.work__cards[data-single] {
+		display: block;
+	}
+
+	.work__cards[data-single] > .work-card {
+		display: none;
+		visibility: visible;
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+
+	.work__cards[data-single] > .work-card[data-open] {
+		display: block;
+	}
+}
+
+.work__note {
+	margin-block-start: clamp(1.25rem, 3vw, 2rem);
+	font-size: 0.85rem;
+	color: var(--text-mute);
+	text-wrap: pretty;
+}
+
 /* Timeline esperienze */
 .timeline {
 	display: grid;
@@ -1150,5 +1474,14 @@ button {
 	.reveal {
 		opacity: 1;
 		transform: none;
+	}
+
+	/*
+	 * La regola universale qui sopra non ferma il nastro: lo fa completare
+	 * all'istante, lasciandolo traslato di un periodo intero. Va spento.
+	 */
+	.work__track {
+		animation: none !important;
+		transform: none !important;
 	}
 }

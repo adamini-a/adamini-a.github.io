@@ -1,0 +1,10 @@
+# Sistema operativo ed editor
+.DS_Store
+Thumbs.db
+*~
+.idea/
+.vscode/
+
+# File di lavoro non destinati alla pubblicazione
+/scratch/
+*.local

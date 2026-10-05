@@ -15,8 +15,10 @@ Una pagina sola, scritta a mano. Niente build step, niente npm, niente CDN.
 ```
 docs/
 ├── index.html              la pagina
+├── portfolio/index.html    il portfolio per tema
 ├── assets/
-│   ├── css/main.css        un solo foglio di stile, token in :root
+│   ├── css/main.css        foglio di stile principale, token in :root
+│   ├── css/portfolio.css   solo i componenti in più del portfolio
 │   ├── js/main.js          vanilla, nessuna dipendenza
 │   ├── fonts/              Inter + Space Grotesk, subset latin, woff2
 │   └── img/og-image.png
@@ -49,6 +51,25 @@ GitHub Pages ripubblica da solo a ogni push, da `main` + `/docs`.
 > Fino a settembre 2026 i contenuti si scrivevano con un WordPress locale e un
 > esportatore statico. Quell'impalcatura è stata rimossa: per una pagina sola di
 > contenuti fissi costava più di quanto rendesse.
+
+## Portfolio
+
+`docs/portfolio/` rilegge le repository private della home per tema (linguaggi,
+database, ecosistema web, sicurezza, API, server, automazioni). Usa gli stessi
+token, font e `main.js` della home; `portfolio.css` aggiunge solo indice,
+schede e matrice.
+
+Regole per aggiungere una scheda:
+
+- il cliente resta una **sigla**, con settore e periodo; mai nomi, domini,
+  screenshot o dettagli che permettano di risalirci;
+- si scrive solo ciò che è stato fatto davvero: niente esempi di comodo;
+- la stessa sigla della home, se il progetto c'è già;
+- aggiornare il conteggio nell'indice (`area-link__count`) e il pallino nella
+  matrice.
+
+I temi senza ancora un caso documentato sono segnati da commenti
+`DA COMPLETARE` nell'HTML.
 
 ## Privacy
 

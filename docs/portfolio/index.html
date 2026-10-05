@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="it-IT" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)">
+	<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
+	<title>Portfolio per tema &#8211; Alessio Adamini</title>
+	<link rel="preload" href="../assets/fonts/space-grotesk-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="../assets/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+	<script>
+	(function(){document.documentElement.classList.remove('no-js');try{var t=localStorage.getItem('adamini-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.dataset.theme=t;}catch(e){}})();
+	</script>
+	<meta name="description" content="Dieci anni di progetti riletti per tema: linguaggi, database, WordPress e gestionali, sicurezza e performance, API, server Linux e automazioni. I clienti restano anonimi.">
+	<meta name="author" content="Alessio Adamini">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Portfolio per tema — Alessio Adamini">
+	<meta property="og:description" content="Dieci anni di progetti riletti per tema: linguaggi, database, WordPress e gestionali, sicurezza e performance, API, server Linux e automazioni.">
+	<meta property="og:url" content="https://adamini-a.github.io/portfolio/">
+	<meta property="og:image" content="https://adamini-a.github.io/assets/img/og-image.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:locale" content="it_IT">
+	<meta property="og:site_name" content="Alessio Adamini">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/portfolio.css">
+	<link rel="canonical" href="https://adamini-a.github.io/portfolio/">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header class="site-header" data-stuck="false">
+	<div class="wrap site-header__inner">
+		<a class="brand" href="../" rel="home">
+			<span class="brand__mark" aria-hidden="true">AA</span>
+			<span>Alessio Adamini</span>
+		</a>
+
+		<nav class="nav" aria-label="Navigazione principale">
+			<a href="../">Profilo</a>
+			<a href="#temi">Temi</a>
+			<a href="#matrice">Matrice</a>
+			<a href="#contatti">Contatti</a>
+		</nav>
+
+		<div class="header__tools">
+			<button class="theme-toggle" type="button" aria-label="Cambia tema">
+				<span class="icon-sun" aria-hidden="true">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>
+				</span>
+				<span class="icon-moon" aria-hidden="true">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+				</span>
+			</button>
+
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-label="Apri il menu">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+	</div>
+</header>
+
+<main id="main">
+<section class="hero hero--compact" id="inizio">
+	<span class="hero__grid" aria-hidden="true"></span>
+	<span class="hero__glow" aria-hidden="true"></span>
+
+	<div class="wrap">
+		<p class="hero__status reveal">
+			<span class="dot" aria-hidden="true"></span>
+			Portfolio · per tema
+		</p>
+
+		<h1 class="hero__name reveal" style="--reveal-delay:60ms">
+			<span class="line">Il lavoro,</span>
+			<span class="line accent">per argomento</span>
+		</h1>
+
+		<p class="hero__role reveal" style="--reveal-delay:120ms">Sette aree · dieci progetti · nessun nome</p>
+
+		<p class="hero__intro reveal" style="--reveal-delay:180ms">Le stesse repository private del sito, rilette tema per tema: linguaggi, database, WordPress e gestionali, sicurezza, API, server e automazioni. I clienti restano sigle; il settore e la parte che ho scritto io no.</p>
+
+		<div class="hero__actions reveal" style="--reveal-delay:240ms">
+			<a class="btn btn--primary" href="#temi">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14m0 0 5.5-5.5M12 19l-5.5-5.5"/></svg>
+				Vai ai temi
+			</a>
+			<a class="btn btn--ghost" href="../#repository">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m0 0 5.5-5.5M5 12l5.5 5.5"/></svg>
+				Torna alle repository
+			</a>
+			<a class="btn btn--ghost" href="../media/Alessio_Adamini_CV_2026.pdf" download>
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5"/><path d="M4 19h16"/></svg>
+				Scarica il CV
+			</a>
+		</div>
+	</div>
+</section>
+
+<section class="section" id="temi">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">Indice</p>
+				<h2 class="section__title">Sette temi</h2>
+			</div>
+			<p class="section__lede">Ogni scheda rimanda a un progetto reale. Le sigle sono le stesse della pagina principale.</p>
+		</div>
+
+		<div class="areas">
+			<a class="area-link reveal" style="--reveal-delay:0ms" href="#linguaggi">
+				<span class="area-link__num">01</span>
+				<span class="area-link__title">Linguaggi e markup</span>
+				<span class="area-link__topics">HTML5, CSS3, JavaScript e framework, PHP</span>
+				<span class="area-link__count">3 casi →</span>
+			</a>
+			<a class="area-link reveal" style="--reveal-delay:50ms" href="#database">
+				<span class="area-link__num">02</span>
+				<span class="area-link__title">Database</span>
+				<span class="area-link__topics">Database relazionali, SQL, MySQL, MariaDB, SQL Server</span>
+				<span class="area-link__count">3 casi →</span>
+			</a>
+			<a class="area-link reveal" style="--reveal-delay:100ms" href="#web">
+				<span class="area-link__num">03</span>
+				<span class="area-link__title">Ecosistema web</span>
+				<span class="area-link__topics">Full stack, WordPress professionale, gestionali e CRM</span>
+				<span class="area-link__count">6 casi →</span>
+			</a>
+			<a class="area-link reveal" style="--reveal-delay:150ms" href="#sicurezza">
+				<span class="area-link__num">04</span>
+				<span class="area-link__title">Sicurezza, performance, SEO</span>
+				<span class="area-link__topics">Sicurezza web, ottimizzazione, SEO tecnica</span>
+				<span class="area-link__count">4 casi →</span>
+			</a>
+			<a class="area-link reveal" style="--reveal-delay:200ms" href="#api">
+				<span class="area-link__num">05</span>
+				<span class="area-link__title">API e integrazioni</span>
+				<span class="area-link__topics">API REST, webhook, API Google, servizi Meta, integrazioni con CRM</span>
+				<span class="area-link__count">4 casi →</span>
+			</a>
+			<a class="area-link reveal" style="--reveal-delay:250ms" href="#sistemi">
+				<span class="area-link__num">06</span>
+				<span class="area-link__title">Server e versionamento</span>
+				<span class="area-link__topics">Git, Linux, Docker, rilascio</span>
+				<span class="area-link__count">4 casi →</span>
+			</a>
+			<a class="area-link reveal" style="--reveal-delay:300ms" href="#automazione">
+				<span class="area-link__num">07</span>
+				<span class="area-link__title">AI e automazioni</span>
+				<span class="area-link__topics">AI in locale, workflow di elaborazione e trasformazione dei dati</span>
+				<span class="area-link__count">3 casi →</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- 01 ======================================================================= -->
+<section class="section" id="linguaggi">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">01 · Linguaggi e markup</p>
+				<h2 class="section__title">Gli attrezzi di tutti i giorni</h2>
+			</div>
+			<p class="section__lede">Usati abbastanza a lungo da conoscerne i difetti, e da saperci convivere.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">HTML5</li>
+			<li class="tag tag--theme">CSS3</li>
+			<li class="tag tag--theme">JavaScript</li>
+			<li class="tag tag--theme">React · Vue · Nuxt</li>
+			<li class="tag tag--theme">PHP</li>
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">Trasversale</p>
+					<p class="case__period">2016 — oggi</p>
+				</div>
+				<h3 class="case__title">PHP dalla 5.0 alla 8.5, una versione alla volta</h3>
+				<p class="case__context">Dieci anni di back-end a oggetti, quasi sempre su codice che esisteva prima di me.</p>
+				<ul class="case__list">
+					<li>Un gestionale di manutenzione accompagnato dalla 5.0 alla 8.1, con TDD e CI/CD introdotti dentro il legacy (M.S.).</li>
+					<li>Legacy in PHP 5 e jQuery mantenuto in parallelo ai nuovi applicativi Symfony, senza fermare il servizio (U.T.).</li>
+					<li>E-commerce dalla 7.0 alla 8.5, con Symfony o Laravel dove serve un framework.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">PHP</li>
+					<li class="tag">Symfony</li>
+					<li class="tag">Laravel</li>
+					<li class="tag">TDD</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">F.C.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Da React e Laravel a un monorepo Nuxt</h3>
+				<p class="case__context">Produttore di impianti di aspirazione per l'industria, con rivenditori in decine di paesi.</p>
+				<ul class="case__list">
+					<li>Portale B2B con configuratore a fasi: l'ordine si costruisce un pezzo alla volta.</li>
+					<li>Migrazione in corso da React e Laravel a un monorepo Nuxt e Strapi, con il portale in produzione nel frattempo.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">JavaScript</li>
+					<li class="tag">React</li>
+					<li class="tag">Nuxt</li>
+					<li class="tag">Laravel</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:140ms">
+				<div class="case__head">
+					<p class="case__sigla">Questo sito</p>
+					<p class="case__period">2026</p>
+				</div>
+				<h3 class="case__title">HTML e CSS scritti a mano, senza build</h3>
+				<p class="case__context">L'unico progetto di cui posso mostrare il codice: è pubblico.</p>
+				<ul class="case__list">
+					<li>Un solo foglio di stile, token in <code>:root</code>, tema chiaro e scuro, tipografia fluida con <code>clamp()</code>.</li>
+					<li>Grid, <code>color-mix()</code> e <code>:has()</code> al posto di JavaScript dove basta il CSS.</li>
+					<li>Il nastro delle repository funziona anche senza JS, da tastiera e con <code>prefers-reduced-motion</code>.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">HTML5</li>
+					<li class="tag tag--theme">CSS3</li>
+					<li class="tag tag--theme">JavaScript</li>
+					<li class="tag">Accessibilità</li>
+				</ul>
+				<a class="case__link" href="https://github.com/adamini-a/adamini-a.github.io" rel="noopener" target="_blank">
+					Il codice su GitHub
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7m0 0H9m8 0v8"/></svg>
+				</a>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- 02 ======================================================================= -->
+<section class="section" id="database">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">02 · Database</p>
+				<h2 class="section__title">Dati relazionali, sotto tutto il resto</h2>
+			</div>
+			<p class="section__lede">Gestionali, e-commerce e strumenti interni: cambia l'interfaccia, sotto c'è sempre uno schema da rispettare.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">Database relazionali</li>
+			<li class="tag tag--theme">SQL</li>
+			<li class="tag tag--theme">MySQL</li>
+			<li class="tag tag--theme">MariaDB</li>
+			<li class="tag tag--theme">SQL Server</li>
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">M.S.</p>
+					<p class="case__period">2016 — 2021</p>
+				</div>
+				<h3 class="case__title">Un gestionale, un cliente alla volta</h3>
+				<p class="case__context">Software house di un gestionale per la manutenzione industriale, usato da una torrefazione globale e da una catena di fast fashion.</p>
+				<ul class="case__list">
+					<li>Back-end PHP con applicazioni personalizzate cliente per cliente.</li>
+					<li>Tre motori relazionali sotto lo stesso lavoro: MySQL, MariaDB e SQL Server.</li>
+					<li>Interfaccia diretta con i key account dei clienti finali, per tradurre le loro richieste in modifiche.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">MySQL</li>
+					<li class="tag tag--theme">MariaDB</li>
+					<li class="tag tag--theme">SQL Server</li>
+					<li class="tag">OO-PHP</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">R.R.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Ordini, corrispettivi e fatture</h3>
+				<p class="case__context">Laboratorio di ricamo e stampa personalizzata che vende online in tutta Italia.</p>
+				<ul class="case__list">
+					<li>Dati portati fuori dal legacy e dentro un back-end Strapi 5 su MySQL.</li>
+					<li>Ogni ordine è un pezzo unico: corrispettivi e fatture devono tornare con quello che va in produzione.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">MySQL</li>
+					<li class="tag">Strapi 5</li>
+					<li class="tag">Migrazione dati</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:140ms">
+				<div class="case__head">
+					<p class="case__sigla">T.Y.</p>
+					<p class="case__period">2025</p>
+				</div>
+				<h3 class="case__title">Chi usava davvero cosa</h3>
+				<p class="case__context">Cantiere navale di superyacht su misura: pochi scafi l'anno, ognuno un progetto a sé.</p>
+				<ul class="case__list">
+					<li>Analisi dello storico degli accessi per capire quali strumenti venivano usati, e da chi.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">SQL</li>
+					<li class="tag">SQLite</li>
+					<li class="tag">Analisi dati</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- 03 ======================================================================= -->
+<section class="section" id="web">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">03 · Ecosistema web</p>
+				<h2 class="section__title">Dal tema WordPress al gestionale su misura</h2>
+			</div>
+			<p class="section__lede">Front-end e back-end nello stesso paio di mani: meno passaggi di consegne, meno cose che si perdono.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">Full stack</li>
+			<li class="tag tag--theme">WordPress professionale</li>
+			<li class="tag tag--theme">Temi e plugin</li>
+			<li class="tag tag--theme">Gestionali web</li>
+			<li class="tag tag--theme">CRM</li>
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">Q.D.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Un prezzo che non sta in un listino</h3>
+				<p class="case__context">E-commerce di condotte e tubazioni tagliate su misura: il prezzo dipende da come configuri il pezzo.</p>
+				<ul class="case__list">
+					<li>Motore di pricing dinamico e checkout su misura sopra WooCommerce.</li>
+					<li>Regole di spedizione pensate per merce ingombrante.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">WordPress</li>
+					<li class="tag">WooCommerce</li>
+					<li class="tag">PHP</li>
+					<li class="tag">SCSS</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">E.P. · Z.P.</p>
+					<p class="case__period">2024 — 2025</p>
+				</div>
+				<h3 class="case__title">Un gruppo, due marchi, molti paesi</h3>
+				<p class="case__context">Gruppo europeo delle grandi cucine e lavanderie professionali, e un suo marchio storico della ristorazione.</p>
+				<ul class="case__list">
+					<li>Evoluzione del tema corporate multi-country, con menù differenziati per paese.</li>
+					<li>Pagine di linea prodotto costruite per reggere un catalogo che cambia di continuo.</li>
+					<li>Sito multilingua e landing di prodotto, con il recupero delle traduzioni mancanti fra le lingue.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">WordPress</li>
+					<li class="tag">ACF</li>
+					<li class="tag">Composer</li>
+					<li class="tag">SCSS</li>
+				</ul>
+			</article>
+
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">T.Y.</p>
+					<p class="case__period">2025</p>
+				</div>
+				<h3 class="case__title">Un helpdesk costruito da zero</h3>
+				<p class="case__context">Cantiere navale di superyacht su misura in acciaio e alluminio.</p>
+				<ul class="case__list">
+					<li>Sistema di ticket con ruoli e permessi per reparto.</li>
+					<li>Pannello di amministrazione su Backpack, sopra Laravel 12.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Gestionale web</li>
+					<li class="tag">Laravel 12</li>
+					<li class="tag">Backpack</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">N.G.</p>
+					<p class="case__period">2025</p>
+				</div>
+				<h3 class="case__title">Ogni centro vede i suoi dati, e nient'altro</h3>
+				<p class="case__context">Rete di centri specializzati con un'area riservata agli affiliati.</p>
+				<ul class="case__list">
+					<li>Piattaforma Nuxt e Strapi con i permessi limitati al singolo centro.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Full stack</li>
+					<li class="tag">Nuxt</li>
+					<li class="tag">Strapi</li>
+				</ul>
+			</article>
+
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">U.T.</p>
+					<p class="case__period">2022 — 2024</p>
+				</div>
+				<h3 class="case__title">Applicativi critici per un grande ateneo</h3>
+				<p class="case__context">Uno dei più grandi atenei pubblici italiani, con vent'anni di applicativi stratificati.</p>
+				<ul class="case__list">
+					<li>Gestione di assegnazioni e logistica in Symfony e React.</li>
+					<li>Consulenza su dematerializzazione e mentoring del team interno sui nuovi framework.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Gestionale web</li>
+					<li class="tag">Symfony</li>
+					<li class="tag">React</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">R.R.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Rifatto da capo, partendo dal legacy</h3>
+				<p class="case__context">Laboratorio di ricamo e stampa personalizzata: ogni ordine è un pezzo unico.</p>
+				<ul class="case__list">
+					<li>Rendering lato server e un back-end dedicato al front.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Full stack</li>
+					<li class="tag">Nuxt 4</li>
+					<li class="tag">Strapi 5</li>
+				</ul>
+				<p class="case__metric"><span class="work-card__metric-value">571</span> commit</p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- 04 ======================================================================= -->
+<section class="section" id="sicurezza">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">04 · Sicurezza, performance, SEO</p>
+				<h2 class="section__title">Le cose che si notano quando mancano</h2>
+			</div>
+			<p class="section__lede">Nessuno ringrazia per un sito che non è stato bucato o che si apre in fretta. Si accorgono del contrario.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">Sicurezza web</li>
+			<li class="tag tag--theme">Performance</li>
+			<li class="tag tag--theme">SEO tecnica</li>
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">4×WP</p>
+					<p class="case__period">2025</p>
+				</div>
+				<h3 class="case__title">Quattro siti, un solo vettore</h3>
+				<p class="case__context">Quattro siti sullo stesso hosting, compromessi dallo stesso vettore nel giro di pochi giorni.</p>
+				<ul class="case__list">
+					<li>Bonifica sito per sito: quarantena dei file infetti, rimozione delle utenze amministrative fittizie.</li>
+					<li>Chiusura delle vulnerabilità che avevano aperto la porta e piano di hardening per il dopo.</li>
+					<li>Documentazione dell'incidente, perché la prossima volta si parta da lì.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Sicurezza web</li>
+					<li class="tag">WordPress</li>
+					<li class="tag">Incident response</li>
+					<li class="tag">Hardening</li>
+				</ul>
+				<p class="case__metric"><span class="work-card__metric-value">4</span> siti rimessi in sicurezza</p>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">N.G.</p>
+					<p class="case__period">2025</p>
+				</div>
+				<h3 class="case__title">Anti-spam senza regalare dati a terzi</h3>
+				<p class="case__context">Form pubblici di una rete di centri specializzati.</p>
+				<ul class="case__list">
+					<li>Protezione dei form costruita in casa, senza appoggiarsi a servizi esterni.</li>
+					<li>Permessi delimitati per centro: un account compromesso non vede gli altri.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Sicurezza web</li>
+					<li class="tag">Privacy</li>
+					<li class="tag">Nuxt</li>
+				</ul>
+			</article>
+
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">Trasversale</p>
+					<p class="case__period">2024 — oggi</p>
+				</div>
+				<h3 class="case__title">Audit che girano da soli</h3>
+				<p class="case__context">Strumenti Python scritti su misura, usati sui siti dei clienti.</p>
+				<ul class="case__list">
+					<li>Misura delle performance di caricamento (FCP, TBT) e controlli di accessibilità.</li>
+					<li>Controlli di SEO tecnica, ripetibili invece che a occhio.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Performance</li>
+					<li class="tag tag--theme">SEO tecnica</li>
+					<li class="tag">Python</li>
+					<li class="tag">Accessibilità</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">Questo sito</p>
+					<p class="case__period">2026</p>
+				</div>
+				<h3 class="case__title">Zero chiamate a terzi</h3>
+				<p class="case__context">Il sito e questa pagina, come esempio verificabile.</p>
+				<ul class="case__list">
+					<li>Font serviti dal dominio, niente CDN né tracciamento: nessun dato del visitatore esce dalla pagina.</li>
+					<li>Dati strutturati, Open Graph, sitemap e canonical scritti a mano.</li>
+					<li>Font precaricati e JavaScript caricato in <code>defer</code>.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">SEO tecnica</li>
+					<li class="tag tag--theme">Performance</li>
+					<li class="tag">GDPR</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- 05 ======================================================================= -->
+<section class="section" id="api">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">05 · API e integrazioni</p>
+				<h2 class="section__title">Far parlare sistemi che non si conoscono</h2>
+			</div>
+			<p class="section__lede">Pagamenti, CRM, corrieri e newsletter: ognuno con le sue regole, i suoi errori e i suoi tempi.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">API REST</li>
+			<li class="tag tag--theme">Integrazioni CRM</li>
+			<li class="tag tag--theme">Piattaforme di terze parti</li>
+			<li class="tag tag--theme">Webhook</li>
+			<li class="tag tag--theme">API Google</li>
+			<li class="tag tag--theme">Servizi Meta</li>
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">Trasversale</p>
+					<p class="case__period">2024 — oggi</p>
+				</div>
+				<h3 class="case__title">Pagamenti, CRM, corrieri, newsletter</h3>
+				<p class="case__context">Piattaforme e-commerce in PHP, dalla 7.0 alla 8.5.</p>
+				<ul class="case__list">
+					<li>Pagamenti con Stripe.</li>
+					<li>Sincronizzazione con Salesforce, il CRM del cliente.</li>
+					<li>Spedizioni con BRT e campagne email con Mailup.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">API REST</li>
+					<li class="tag tag--theme">Integrazioni CRM</li>
+					<li class="tag">Stripe</li>
+					<li class="tag">Salesforce</li>
+					<li class="tag">BRT</li>
+					<li class="tag">Mailup</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">R.R.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Dal checkout alla spedizione</h3>
+				<p class="case__context">E-commerce di prodotti personalizzati, con ordini che vanno in produzione uno per uno.</p>
+				<ul class="case__list">
+					<li>Integrazione del corriere direttamente nel flusso dell'ordine.</li>
+					<li>Corrispettivi e fatture, e uno spooler dedicato alle email transazionali.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">API REST</li>
+					<li class="tag tag--theme">Piattaforme di terze parti</li>
+					<li class="tag">Strapi 5</li>
+				</ul>
+			</article>
+
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">N.G. · F.C. · R.R.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Strapi come strato di API</h3>
+				<p class="case__context">Tre progetti con la stessa architettura: back-end headless, front-end che consuma API.</p>
+				<ul class="case__list">
+					<li>Il front Nuxt parla solo con le API: niente accessi diretti al database dal client.</li>
+					<li>I permessi stanno lato API, così valgono qualunque sia il client che chiama.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">API REST</li>
+					<li class="tag">Strapi</li>
+					<li class="tag">Nuxt</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">M.S.</p>
+					<p class="case__period">2016 — 2021</p>
+				</div>
+				<h3 class="case__title">Un gestionale che parla con l'esterno</h3>
+				<p class="case__context">Software house di un gestionale per la manutenzione industriale.</p>
+				<ul class="case__list">
+					<li>Webhook per lo scambio di eventi fra il gestionale e i sistemi esterni.</li>
+					<li>Integrazioni con le API Google e con i servizi Meta.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Webhook</li>
+					<li class="tag tag--theme">API Google</li>
+					<li class="tag tag--theme">Servizi Meta</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- 06 ======================================================================= -->
+<section class="section" id="sistemi">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">06 · Server e versionamento</p>
+				<h2 class="section__title">Quello che sta sotto, e lo tiene in piedi</h2>
+			</div>
+			<p class="section__lede">Il codice è a metà strada finché non gira su un server che qualcuno sa gestire.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">Git e GitHub</li>
+			<li class="tag tag--theme">Linux</li>
+			<li class="tag tag--theme">Container</li>
+			<li class="tag tag--theme">CI/CD</li>
+			<li class="tag tag--theme">Docker</li>
+			<!-- DA COMPLETARE — Cloud: nessun caso documentato. Aggiungere solo con una scheda reale. -->
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">Trasversale</p>
+					<p class="case__period">2024 — oggi</p>
+				</div>
+				<h3 class="case__title">Ubuntu Server, dalle credenziali al container</h3>
+				<p class="case__context">I server su cui girano i progetti dei clienti.</p>
+				<ul class="case__list">
+					<li>Configurazione, credenziali e permessi gestiti in prima persona.</li>
+					<li>Certificati SSL e containerizzazione.</li>
+					<li>Ambienti Docker emulati in locale con Podman: stesse immagini, senza demone e senza root.</li>
+					<li>Ownership sul versionamento Git dei progetti.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Linux</li>
+					<li class="tag tag--theme">Docker</li>
+					<li class="tag tag--theme">Git</li>
+					<li class="tag">Ubuntu Server</li>
+					<li class="tag">Podman</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">F.C.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Reverse proxy e processi in produzione</h3>
+				<p class="case__context">Il server del portale B2B, mentre l'applicazione cambia architettura.</p>
+				<ul class="case__list">
+					<li>Reverse proxy davanti alle applicazioni Node.</li>
+					<li>Gestione dei processi con PM2 sul server di produzione.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Linux</li>
+					<li class="tag">PM2</li>
+					<li class="tag">Reverse proxy</li>
+				</ul>
+			</article>
+
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">R.R.</p>
+					<p class="case__period">2025 — oggi</p>
+				</div>
+				<h3 class="case__title">Processi che si rialzano da soli</h3>
+				<p class="case__context">Un e-commerce che non può stare giù di notte aspettando qualcuno.</p>
+				<ul class="case__list">
+					<li>Watchdog che rimette in piedi i processi quando cadono.</li>
+					<li>Credenziali mascherate nei log: quello che finisce su disco non deve diventare una falla.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Linux</li>
+					<li class="tag">PM2</li>
+					<li class="tag">Logging</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">M.S.</p>
+					<p class="case__period">2016 — 2021</p>
+				</div>
+				<h3 class="case__title">TDD e CI/CD dentro un legacy</h3>
+				<p class="case__context">Un gestionale con anni di storia e clienti in produzione.</p>
+				<ul class="case__list">
+					<li>Test e integrazione continua introdotti su una base di codice nata senza.</li>
+					<li>Adozione portata nel team in pair programming, non imposta da un documento.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">CI/CD</li>
+					<li class="tag tag--theme">Git</li>
+					<li class="tag">TDD</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- 07 ======================================================================= -->
+<section class="section" id="automazione">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">07 · AI e automazioni</p>
+				<h2 class="section__title">Quello che non ha senso fare a mano</h2>
+			</div>
+			<p class="section__lede">Script e pipeline che tolgono lavoro ripetitivo, e lo fanno sempre allo stesso modo.</p>
+		</div>
+
+		<ul class="tags area__topics">
+			<li class="tag tag--theme">Workflow di dati</li>
+			<li class="tag tag--theme">Automazione</li>
+			<li class="tag tag--theme">Intelligenza artificiale</li>
+			<!-- DA COMPLETARE — LLM, API di servizi AI esterni, piattaforme di automazione (n8n, Make, Zapier…):
+			     nessun caso documentato. Whisper è un modello di AI ma non un LLM, e gira in locale, non via API. -->
+		</ul>
+
+		<div class="cases">
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">U.T.</p>
+					<p class="case__period">2022 — 2024</p>
+				</div>
+				<h3 class="case__title">Pipeline di dati per un ateneo</h3>
+				<p class="case__context">Uno dei più grandi atenei pubblici italiani.</p>
+				<ul class="case__list">
+					<li>Pipeline di automazione in Python e Pandas.</li>
+					<li>Rilascio e gestione su server Linux.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Workflow di dati</li>
+					<li class="tag">Python</li>
+					<li class="tag">Pandas</li>
+				</ul>
+			</article>
+
+			<article class="case reveal" style="--reveal-delay:70ms">
+				<div class="case__head">
+					<p class="case__sigla">Trasversale</p>
+					<p class="case__period">2024 — oggi</p>
+				</div>
+				<h3 class="case__title">Monitoraggio che non dorme</h3>
+				<p class="case__context">Controlli automatici sui server e sui siti in gestione.</p>
+				<ul class="case__list">
+					<li>Uptime e scadenza dei certificati controllati in automatico.</li>
+					<li>Stress test per sapere quanto regge un server prima che lo scopra il traffico.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Automazione</li>
+					<li class="tag">Python</li>
+					<li class="tag">Monitoraggio</li>
+				</ul>
+			</article>
+
+			<article class="case reveal">
+				<div class="case__head">
+					<p class="case__sigla">Personale</p>
+					<p class="case__period">2026</p>
+				</div>
+				<h3 class="case__title">Dalla voce al testo, senza uscire dal computer</h3>
+				<p class="case__context">Un archivio audio personale che si trascrive e si cataloga da solo, con un modello di AI che gira in locale: nessun file lascia la macchina.</p>
+				<ul class="case__list">
+					<li>Un servizio systemd registra in spezzoni da 30 minuti; ogni ora un job cron prende i file chiusi e lascia stare quello ancora in scrittura.</li>
+					<li>Trascrizione in italiano con Whisper (whisper.cpp, modello medium) e un VAD Silero che salta i silenzi, dove il modello tenderebbe a inventare testo.</li>
+					<li>Audio compresso in Opus a 24 kbps, decine di volte più leggero del WAV: l'originale si cancella solo dopo aver verificato il file prodotto.</li>
+					<li>Archivio catalogato per giorno. Lo storico è stato rielaborato da uno script di migrazione ripartibile, con lock anti doppio avvio e controllo dello spazio su disco.</li>
+				</ul>
+				<ul class="tags">
+					<li class="tag tag--theme">Intelligenza artificiale</li>
+					<li class="tag tag--theme">Workflow di dati</li>
+					<li class="tag tag--theme">Automazione</li>
+					<li class="tag">Whisper</li>
+					<li class="tag">Bash</li>
+					<li class="tag">systemd</li>
+					<li class="tag">FFmpeg</li>
+				</ul>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- Matrice ================================================================== -->
+<section class="section" id="matrice">
+	<div class="wrap">
+		<div class="section__head">
+			<div>
+				<p class="section__kicker">Matrice</p>
+				<h2 class="section__title">Dove ritrovare ogni tema</h2>
+			</div>
+			<p class="section__lede">Righe: i progetti. Colonne: i temi. Un pallino vuol dire che qui sopra c'è una scheda.</p>
+		</div>
+
+		<div class="matrix reveal">
+			<table>
+				<caption>Progetti per tema</caption>
+				<thead>
+					<tr>
+						<th scope="col"><span class="screen-reader-text">Progetto</span></th>
+						<th scope="col"><a href="#linguaggi" title="Linguaggi e markup">01<span class="screen-reader-text"> Linguaggi e markup</span></a></th>
+						<th scope="col"><a href="#database" title="Database">02<span class="screen-reader-text"> Database</span></a></th>
+						<th scope="col"><a href="#web" title="Ecosistema web">03<span class="screen-reader-text"> Ecosistema web</span></a></th>
+						<th scope="col"><a href="#sicurezza" title="Sicurezza, performance, SEO">04<span class="screen-reader-text"> Sicurezza, performance, SEO</span></a></th>
+						<th scope="col"><a href="#api" title="API e integrazioni">05<span class="screen-reader-text"> API e integrazioni</span></a></th>
+						<th scope="col"><a href="#sistemi" title="Server e versionamento">06<span class="screen-reader-text"> Server e versionamento</span></a></th>
+						<th scope="col"><a href="#automazione" title="AI e automazioni">07<span class="screen-reader-text"> AI e automazioni</span></a></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">M.S.<small>Manutenzione industriale</small></th>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">U.T.<small>Ateneo pubblico</small></th>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+					</tr>
+					<tr>
+						<th scope="row">E.P. · Z.P.<small>Ristorazione professionale</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">T.Y.<small>Cantiere navale</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">N.G.<small>Rete di centri</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">4×WP<small>Hosting condiviso</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">F.C.<small>Impianti industriali</small></th>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">R.R.<small>Ricamo e stampa</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Q.D.<small>E-commerce su misura</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Trasversale<small>Più clienti, 2016 — oggi</small></th>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Questo sito<small>Codice pubblico</small></th>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+					</tr>
+					<tr>
+						<th scope="row">Personale<small>Progetto proprio</small></th>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="screen-reader-text">no</span></td>
+						<td><span class="mx-dot" aria-hidden="true"></span><span class="screen-reader-text">sì</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<p class="matrix__legend">
+			<span><b>01</b>Linguaggi</span>
+			<span><b>02</b>Database</span>
+			<span><b>03</b>Ecosistema web</span>
+			<span><b>04</b>Sicurezza e performance</span>
+			<span><b>05</b>API</span>
+			<span><b>06</b>Server</span>
+			<span><b>07</b>AI e automazioni</span>
+		</p>
+
+		<p class="work__note">Le sigle restano sigle. Settore e periodo servono a dare un contesto, non a far risalire al cliente: i progetti appartengono a chi li ha commissionati.</p>
+	</div>
+</section>
+
+<section class="section contact" id="contatti">
+	<div class="wrap wrap--narrow">
+		<p class="section__kicker" style="justify-content:center">Contatti</p>
+		<h2 class="contact__title reveal">Un tema ti interessa più degli altri?</h2>
+
+		<p class="contact__lede reveal" style="--reveal-delay:80ms">Scrivimi da quale scheda vuoi partire e ne parliamo nel dettaglio, nei limiti di quello che i clienti mi permettono di raccontare.</p>
+
+		<a class="contact__mail reveal" style="--reveal-delay:140ms" href="mailto:aadamini2@gmail.com">aadamini2@gmail.com</a>
+
+		<div class="contact__links reveal" style="--reveal-delay:200ms">
+			<a class="btn btn--ghost" href="https://www.linkedin.com/in/alessio-adamini-a20788132" target="_blank" rel="me noopener">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.6a2 2 0 0 1 4 0V17"/></svg>
+				LinkedIn
+			</a>
+			<a class="btn btn--ghost" href="../">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 12H5m0 0 5.5-5.5M5 12l5.5 5.5"/></svg>
+				Torna al profilo
+			</a>
+		</div>
+	</div>
+</section>
+</main>
+
+<footer class="site-footer">
+	<div class="wrap site-footer__inner">
+		<p>© 2026 Alessio Adamini</p>
+		<p>
+			<a href="../">Profilo</a>
+			· <a href="https://www.linkedin.com/in/alessio-adamini-a20788132" rel="me noopener" target="_blank">LinkedIn</a>
+			· <a href="mailto:aadamini2@gmail.com">Email</a>
+		</p>
+	</div>
+</footer>
+
+<script defer src="../assets/js/main.js"></script>
+</body>
+</html>

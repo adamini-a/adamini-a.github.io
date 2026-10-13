@@ -354,6 +354,12 @@
 							<span class="work-tile__period">2025 — oggi</span>
 						</a>
 					</li>
+					<li>
+						<a class="work-tile" id="work-tile-rs" href="#work-card-rs" data-work="rs">
+							<span class="work-tile__sigla">R.S.</span>
+							<span class="work-tile__period">2026</span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -364,7 +370,7 @@
 				<p class="work-card__hint">I nomi restano fuori: il lavoro era dei clienti e il codice sta in repository che non sono mie. Quello che posso raccontare è la parte che ho scritto io.</p>
 				<ul class="work-card__numbers">
 					<li><span class="work-card__metric-value">10</span> anni in produzione</li>
-					<li><span class="work-card__metric-value">11</span> progetti qui dentro</li>
+					<li><span class="work-card__metric-value">12</span> progetti qui dentro</li>
 				</ul>
 			</article>
 
@@ -625,6 +631,30 @@
 						<li class="tag">SCSS</li>
 						<li class="tag">Composer</li>
 					</ul>
+				</div>
+			</article>
+
+			<article class="work-card" id="work-card-rs" role="region" aria-labelledby="work-tile-rs">
+				<div class="work-card__head">
+					<p class="work-card__sigla">R.S.</p>
+					<p class="work-card__period">2026</p>
+				</div>
+				<div class="work-card__body">
+					<p class="work-card__hint">E-commerce di ricambi per scooter su OpenCart, ereditato da mani precedenti: dati dei clienti esposti in più punti, senza che nessuno se ne fosse accorto.</p>
+					<ul class="work-card__list">
+						<li>Analisi di sicurezza dell&#039;installazione: nove vettori di esposizione documentati con le prove, dal dump del database raggiungibile dal web alle credenziali in chiaro ripetute in più file.</li>
+						<li>Password dei clienti conservate con hashing debole: ne ho dimostrato la fragilità per far pesare il rischio reale, non per ipotesi.</li>
+						<li>Piano di rientro in ordine di priorità e nota sugli obblighi GDPR, visto che tra i dati esposti c&#039;erano anche codici fiscali.</li>
+					</ul>
+				</div>
+				<div class="work-card__side">
+					<ul class="tags">
+						<li class="tag">Security audit</li>
+						<li class="tag">OpenCart</li>
+						<li class="tag">PHP</li>
+						<li class="tag">GDPR</li>
+					</ul>
+					<p class="work-card__metric"><span class="work-card__metric-value">9</span> vettori di fuga documentati</p>
 				</div>
 			</article>
 		</div>

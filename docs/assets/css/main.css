@@ -345,6 +345,49 @@ button {
 	transform: scaleX(1);
 }
 
+/* Link a un'altra pagina: separato dalle ancore e reso come pillola */
+.nav__sep {
+	width: 1px;
+	height: 1.1rem;
+	background: var(--line);
+}
+
+.nav a.nav__page {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	padding: 0.4rem 0.9rem;
+	font-weight: 500;
+	color: var(--accent);
+	border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+	border-radius: 999px;
+	transition: color 0.2s var(--ease), background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.nav a.nav__page::after {
+	content: none;
+}
+
+.nav a.nav__page:hover {
+	color: var(--accent-ink);
+	background: var(--accent);
+	border-color: var(--accent);
+}
+
+.nav__page svg {
+	width: 1em;
+	height: 1em;
+	transition: transform 0.2s var(--ease);
+}
+
+.nav__page:hover svg {
+	transform: translateX(3px);
+}
+
+.nav__page--back:hover svg {
+	transform: translateX(-3px);
+}
+
 .header__tools {
 	display: flex;
 	align-items: center;
@@ -401,6 +444,17 @@ button {
 		font-size: var(--step-2);
 		font-family: var(--font-display);
 		color: var(--text);
+	}
+
+	.nav__sep {
+		width: 3rem;
+		height: 1px;
+	}
+
+	.nav a.nav__page {
+		font-size: var(--step-1);
+		padding: 0.55rem 1.3rem;
+		color: var(--accent);
 	}
 
 	body:has(.nav-toggle[aria-expanded="true"]) .nav {

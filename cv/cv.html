@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Alessio Adamini - CV Senior Software Developer</title>
+<meta name="author" content="Alessio Adamini">
+<meta name="description" content="Curriculum vitae di Alessio Adamini, Senior Software Developer Full-Stack (PHP, Symfony, Laravel, React, Vue.js, Flutter, Python, Linux).">
+<style>
+	/* Font del sito, nessuna dipendenza esterna */
+	@font-face { font-family: "Inter"; font-weight: 400; src: url("../docs/assets/fonts/inter-400-latin.woff2") format("woff2"); }
+	@font-face { font-family: "Inter"; font-weight: 400; src: url("../docs/assets/fonts/inter-400-latin-ext.woff2") format("woff2"); unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20CF; }
+	@font-face { font-family: "Inter"; font-weight: 500; src: url("../docs/assets/fonts/inter-500-latin.woff2") format("woff2"); }
+	@font-face { font-family: "Inter"; font-weight: 600; src: url("../docs/assets/fonts/inter-600-latin.woff2") format("woff2"); }
+
+	:root {
+		--navy: #0f2a44;
+		--orange: #ef8a1f;
+		--teal: #1d6b8c;
+		--ink: #1f2933;
+		--muted: #52606d;
+		--peach: #fbd9bd;
+	}
+
+	@page { size: A4; margin: 0; }
+
+	* { box-sizing: border-box; margin: 0; padding: 0; }
+
+	html, body {
+		background: #fff;
+		color: var(--ink);
+		font-family: "Inter", sans-serif;
+		font-size: 11px;
+		line-height: 1.45;
+		-webkit-print-color-adjust: exact;
+		print-color-adjust: exact;
+	}
+
+	.page {
+		width: 210mm;
+		height: 297mm;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Header ------------------------------------------------------------- */
+	.header {
+		background: var(--navy);
+		text-align: center;
+		padding: 24px 20px 20px;
+	}
+	.header h1 {
+		color: var(--orange);
+		font-weight: 400;
+		font-size: 38px;
+		line-height: 1.1;
+		letter-spacing: .08em;
+		text-transform: uppercase;
+	}
+	.header .role {
+		color: #fbe3cc;
+		font-weight: 600;
+		font-size: 15px;
+		letter-spacing: .09em;
+		text-transform: uppercase;
+		margin-top: 8px;
+	}
+
+	/* Corpo a due colonne: l'ordine nel codice e' quello di lettura,
+	   la griglia lo dispone visivamente in due colonne ------------------ */
+	.body {
+		flex: 1;
+		display: grid;
+		grid-template-columns: 1fr 72mm;
+		grid-template-rows: auto auto auto auto auto 1fr;
+		column-gap: 0;
+		padding: 0 0 0 10mm;
+	}
+	.main {
+		grid-column: 1;
+		grid-row: 1 / -1;
+		padding: 16px 16px 12px 0;
+		border-right: 2px solid var(--navy);
+		display: flex;
+		flex-direction: column;
+	}
+	.side {
+		grid-column: 2;
+		padding: 13px 7mm 11px 14px;
+		border-bottom: 1.5px solid var(--navy);
+	}
+	.side:last-of-type { border-bottom: 0; }
+
+	h2 {
+		color: var(--orange);
+		font-weight: 600;
+		font-size: 15px;
+		letter-spacing: .09em;
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+	.side h2 { text-align: center; font-size: 13.5px; }
+
+	strong { font-weight: 600; color: var(--navy); }
+
+	/* Esperienze ---------------------------------------------------------- */
+	.job { margin-bottom: 13px; }
+	.job h3 {
+		color: var(--navy);
+		font-weight: 600;
+		font-style: italic;
+		font-size: 11.5px;
+		letter-spacing: .07em;
+		text-transform: uppercase;
+	}
+	.job .org { font-weight: 600; color: var(--navy); }
+	.job .period { font-weight: 600; color: var(--teal); margin-bottom: 3px; }
+
+	ul { padding-left: 13px; }
+	li { margin-bottom: 2px; }
+	li::marker { color: var(--navy); }
+
+	.privacy {
+		margin-top: auto;
+		background: var(--peach);
+		border-radius: 14px;
+		padding: 7px 14px;
+		font-size: 8.6px;
+		line-height: 1.4;
+		color: var(--ink);
+	}
+
+	/* Sidebar ------------------------------------------------------------- */
+	.contacts { list-style: none; padding: 0; }
+	.contacts li {
+		display: flex;
+		align-items: center;
+		gap: 9px;
+		margin-bottom: 6px;
+		white-space: nowrap;
+		font-size: 9.6px;
+	}
+	.contacts svg {
+		flex: none;
+		width: 17px;
+		height: 17px;
+		stroke: var(--orange);
+		fill: none;
+		stroke-width: 1.7;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+	.contacts a { color: inherit; text-decoration: none; }
+
+	.tech { margin-top: 2px; margin-bottom: 14px; }
+	.tech .skills { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; }
+
+	.skills { list-style: none; padding: 0; }
+	.skills li { margin-bottom: 3.5px; }
+
+
+	.edu { margin-bottom: 6px; }
+	.edu .what { color: var(--navy); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; font-size: 9.4px; }
+	.edu .when { font-weight: 600; color: var(--teal); }
+</style>
+</head>
+<body>
+<div class="page">
+
+	<header class="header">
+		<h1>Alessio Adamini</h1>
+		<p class="role">Senior Software Developer</p>
+	</header>
+
+	<div class="body">
+
+		<section class="side">
+			<h2>Contatti</h2>
+			<ul class="contacts">
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>+39 375 520 7584</span></li>
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:aadamini2@gmail.com">aadamini2@gmail.com</a></li>
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Torino (TO), Italia</span></li>
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.6a2 2 0 0 1 4 0V17"/></svg><a href="https://www.linkedin.com/in/alessio-adamini-a20788132">linkedin.com/in/alessio-adamini-a20788132</a></li>
+				<li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><a href="https://adamini-a.github.io">adamini-a.github.io</a></li>
+			</ul>
+		</section>
+
+		<section class="side">
+			<h2>Profilo</h2>
+			<p>Senior Software Developer con <strong>oltre 10 anni di esperienza</strong> nello sviluppo e nell'architettura di <strong>applicazioni web customizzate</strong>. <strong>Full-Stack</strong> su <strong>PHP (Symfony, Laravel)</strong>, <strong>React</strong>, <strong>Vue.js</strong> e <strong>Flutter</strong>, con gestione di <strong>server Linux</strong>. Integrazione di <strong>API</strong> critiche, automazione con <strong>Python</strong>, <strong>mentoring</strong> e adozione di <strong>TDD e CI/CD</strong> su codice legacy. Patente A3, automunito.</p>
+		</section>
+
+		<main class="main">
+			<h2>Esperienza professionale</h2>
+
+			<article class="job">
+				<h3>Sviluppatore Web Full-Stack</h3>
+				<p class="org">Dadostudio S.a.s. · Torino (TO)</p>
+				<p class="period">2024 – oggi</p>
+				<ul>
+					<li><strong>Architettura e sviluppo full-stack</strong> di piattaforme <strong>e-commerce</strong> in <strong>PHP</strong> (7.0 – 8.5) con <strong>oltre 100 ordini</strong> e <strong>oltre 1.000 utenti al giorno</strong>; integrazione di API complesse (<strong>Stripe</strong>, <strong>Salesforce</strong>, BRT, Mailup).</li>
+					<li><strong>Front-end</strong> con <strong>React</strong>, <strong>Vue.js</strong> e <strong>TypeScript</strong>; app multipiattaforma in <strong>Flutter</strong>.</li>
+					<li>Strumenti <strong>Python</strong> per audit di <strong>performance</strong> (FCP, TBT, accessibilità), <strong>SEO tecnica</strong> e monitoraggio server (uptime, SSL, stress test): <strong>prestazioni migliorate fino all'80%</strong>.</li>
+					<li>Gestione di <strong>Ubuntu Server</strong> (configurazione, credenziali, permessi), ownership sul versionamento <strong>Git</strong> e containerizzazione con <strong>Podman</strong>.</li>
+				</ul>
+			</article>
+
+			<article class="job">
+				<h3>Consulente e sviluppatore web application</h3>
+				<p class="org">Venco Services S.r.l. · progetto presso l'Università degli Studi di Torino</p>
+				<p class="period">2022 – 2024</p>
+				<ul>
+					<li>Sviluppo di <strong>applicativi web critici</strong> (gestione assegnazioni e logistica) con <strong>Symfony</strong> e <strong>React</strong>, insieme alla manutenzione di applicazioni legacy (<strong>PHP 5</strong>, jQuery).</li>
+					<li><strong>Consulenza tecnica</strong> per dematerializzazione e <strong>trasformazione digitale</strong>; <strong>mentoring</strong> e training del team sull'adozione dei nuovi framework.</li>
+					<li><strong>Pipeline di automazione in Python</strong> (Pandas) e rilascio su server <strong>Linux</strong>.</li>
+				</ul>
+			</article>
+
+			<article class="job">
+				<h3>Sviluppatore Back-End</h3>
+				<p class="org">Mainsim S.r.l. · Chiavari (GE)</p>
+				<p class="period">2017 – 2021</p>
+				<ul>
+					<li><strong>Sviluppo back-end OOP in PHP</strong> (5.0 – 8.1) e <strong>MySQL</strong> per applicazioni customizzate nel settore della manutenzione.</li>
+					<li><strong>Mentoring</strong> di sviluppatori in pair programming sull'adozione di <strong>TDD e CI/CD</strong> su codice legacy.</li>
+					<li>Interfaccia diretta con i <strong>Key Account Manager</strong> di clienti come Lavazza e H&amp;M e con team di sviluppo remoti.</li>
+					<li><strong>Ownership</strong> dell'intero ciclo di sviluppo applicativo.</li>
+				</ul>
+			</article>
+
+			<article class="job">
+				<h3>Stage in sviluppo software</h3>
+				<p class="org">Mainsim S.r.l. · Chiavari (GE)</p>
+				<p class="period">2016 – 2017</p>
+				<ul>
+					<li>Sviluppo in affiancamento in <strong>PHP</strong> e <strong>MySQL</strong> sul prodotto di gestione della manutenzione, fino alla presa in carico di attività autonome.</li>
+				</ul>
+			</article>
+
+			<section class="tech">
+				<h2>Competenze tecniche</h2>
+				<ul class="skills">
+					<li><strong>Linguaggi</strong>: PHP, JavaScript, TypeScript, Python, C#, Dart, SQL, HTML5, CSS3, SCSS</li>
+					<li><strong>Framework</strong>: Symfony, Laravel, React, Vue.js, Nuxt, Flutter, ASP.NET, Strapi, jQuery</li>
+					<li><strong>Database</strong>: MySQL, MariaDB, SQL Server, SQLite</li>
+					<li><strong>API e integrazioni</strong>: API REST, Webhook, Stripe, Salesforce, BRT, Mailup</li>
+					<li><strong>DevOps</strong>: Linux, Ubuntu Server, Git, Docker, Podman, PM2, CI/CD</li>
+					<li><strong>Metodi</strong>: TDD, pair programming, mentoring</li>
+					<li><strong>CMS ed e-commerce</strong>: WordPress, WooCommerce, OpenCart</li>
+					<li><strong>Qualità</strong>: performance web, SEO tecnica, accessibilità, sicurezza web, GDPR</li>
+				</ul>
+			</section>
+
+			<p class="privacy">Autorizzo il trattamento dei miei dati personali ai sensi del Regolamento UE 2016/679 (GDPR) e del D.lgs. 196/2003 e successive modifiche.</p>
+		</main>
+
+		<section class="side">
+			<h2>Lingue</h2>
+			<ul class="skills">
+				<li><strong>Italiano</strong>: madrelingua</li>
+				<li><strong>Inglese</strong>: C1</li>
+				<li><strong>Spagnolo</strong>: B1</li>
+			</ul>
+		</section>
+
+		<section class="side">
+			<h2>Soft skills</h2>
+			<ul class="skills">
+				<li><strong>Leadership e comunicazione</strong>: mentoring, formazione, ascolto attivo, lavoro in team</li>
+				<li><strong>Problem solving</strong>: pensiero fuori dagli schemi</li>
+				<li><strong>Adattabilità</strong>: flessibilità, customer service</li>
+			</ul>
+		</section>
+
+		<section class="side">
+			<h2>Istruzione</h2>
+			<div class="edu">
+				<p class="what">Certificato di Sviluppatore Software</p>
+				<p><span class="when">2017</span> · Lavagna (GE)</p>
+			</div>
+			<div class="edu">
+				<p class="what">Diploma tecnico, indirizzo informatico</p>
+				<p><span class="when">2009 – 2014</span> · IIS Caboto, Chiavari (GE)</p>
+			</div>
+		</section>
+
+	</div>
+</div>
+</body>
+</html>
